@@ -34,8 +34,13 @@ class FilterOptions extends React.Component {
         this.handleNameChange = this.handleNameChange.bind(this);
     }
 
+
 handleNameChange(e) {
     console.log(`change happened`, e.target.value)
+    if (this.props.charactersDataState.includes(e.target.value)) {
+       
+    } 
+
 }
 
 render() {
@@ -45,7 +50,6 @@ render() {
                 <Input type="text" name="name" placeholder="name" onChange={this.handleNameChange}></Input>
                 <Input type="text" placeholder="name"></Input>
                 <Input type="text" placeholder="name"></Input>
-
              </div>
     )
 }

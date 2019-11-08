@@ -19,7 +19,7 @@ const FilterDiv = styled.div`
     align-items: center;
     `;
 
-function Search () {
+function Search (props) {
 
     return (
         <SearchDiv>

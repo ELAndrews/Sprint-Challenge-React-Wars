@@ -24,7 +24,7 @@ const P = styled.p`
 function CharacterCard(props) {
 
     return (
-        <CardDiv>
+      <CardDiv>
             <H1>{props.data.name}</H1>
             <P>Year of Birth: {props.data.birth_year}</P>
             <P>Height: {props.data.height}</P>
