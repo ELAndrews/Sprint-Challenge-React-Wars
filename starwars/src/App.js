@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const AppDiv = styled.div`
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   text-align: center;
   margin: 0px auto;
 `;
@@ -14,6 +14,12 @@ const H1 = styled.h1`
   font-size: 4rem;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+`;
+const CardContainerDiv = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
 `;
 
 
@@ -42,14 +48,16 @@ const App = () => {
   return (
     <AppDiv>
       <H1 className="Header">React Wars</H1>
-      {
-        charactersDataState.map((curr, index) => {
-          return (
-          <CharacterCard 
-          data={curr}
-          key={index}/>
-          )
-        })}
+      <CardContainerDiv>
+          {
+            charactersDataState.map((curr, index) => {
+              return (
+              <CharacterCard 
+              data={curr}
+              key={index}/>
+              )
+            })}
+        </CardContainerDiv>
      </AppDiv>
   );
 }
