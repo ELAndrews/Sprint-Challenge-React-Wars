@@ -5,7 +5,6 @@ import CharacterCard from './components/CharacterCard';
 import Search from './components/Search';
 import styled from 'styled-components';
 
-
 const AppDiv = styled.div`
   width: 80%;
   max-width: 1000px;
