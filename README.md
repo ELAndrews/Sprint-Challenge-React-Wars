@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a UI component-building library for JavaScript. It is representative of a virtual DOM, supporting performance as it will only re-render the difference between the DOM and ‘virtual DOM’, therefore it is data-driven and supports performance when large amounts of data are frequently changed. React enables developers to create ‘components’ (reusable clusters of functional code); these components are functions which return a JSX structure, they can include states, hooks, and relevant functions. It is best practice to provide each component with its own file, this also allows styling components to be produced, keeping all relevant code collectively and stops the potential for pre-declared variable names clashing.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React is the concept of building your application. Considering how your application will look, components and their hierarchy. It is a planning process to develop the relationships of the hierarchy and the components enabling a developer to create meaningful, functional code which is stricter to the concept of DRY. 
 
 - [ ] Describe state.
 
+A state is a built-in object. When declared and created it is initalised with a predetermined state (which can include null/[]/’’).  We use state when we are wanting to change its value to result in a re-render of the DOM. Is is essentially a slicc of saved information at that given time.
+
 - [ ] Describe props.
 
+Props is short for properties. Within React components we pass props down the DOM hierarchy to relevant components; these can include: functions, states. However, they are ‘read-only’ and therefore can not be modified.  
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are any actions that are not directly linked to the calculation of the functions returning value. Side effects include: console.log, useEffect, manipulating application state. The useEffect hook is a frequently seen side effect; it is used to ‘tell’ the component to so something after it renders.
 
 ## Project Set Up
 
